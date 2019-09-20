@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="aSt-ZW-rFo" customClass="TopMainCollectionViewCell" customModule="cp6_8" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vKS-DL-F2V">
+                        <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKd-cR-H2a">
+                                <rect key="frame" x="5" y="5" width="363" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="363" id="Rao-ap-8Mg"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="zyw-BA-knr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="EKd-cR-H2a" secondAttribute="bottom" constant="5" id="Cwp-cW-HFR"/>
+                            <constraint firstItem="EKd-cR-H2a" firstAttribute="top" secondItem="vKS-DL-F2V" secondAttribute="top" constant="5" id="D5a-yx-1sE"/>
+                            <constraint firstAttribute="trailing" secondItem="EKd-cR-H2a" secondAttribute="trailing" constant="5" id="HmG-2z-bbs"/>
+                            <constraint firstItem="EKd-cR-H2a" firstAttribute="leading" secondItem="vKS-DL-F2V" secondAttribute="leading" constant="5" id="kzJ-f3-jZL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vKS-DL-F2V" secondAttribute="trailing" id="Uxl-hh-32W"/>
+                <constraint firstItem="vKS-DL-F2V" firstAttribute="leading" secondItem="aSt-ZW-rFo" secondAttribute="leading" id="oQ2-B2-3WF"/>
+                <constraint firstItem="vKS-DL-F2V" firstAttribute="top" secondItem="aSt-ZW-rFo" secondAttribute="top" id="vWP-1E-HOs"/>
+                <constraint firstAttribute="bottom" secondItem="vKS-DL-F2V" secondAttribute="bottom" id="vYX-bH-I8r"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="U8m-Ki-yN4"/>
+            <size key="customSize" width="373" height="50"/>
+            <connections>
+                <outlet property="label" destination="EKd-cR-H2a" id="DfP-TA-caw"/>
+            </connections>
+            <point key="canvasLocation" x="310.86956521739131" y="31.473214285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>
